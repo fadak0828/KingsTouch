@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingBottom="@dimen/activity_vertical_margin"
+  android:paddingLeft="@dimen/activity_horizontal_margin"
+  android:paddingRight="@dimen/activity_horizontal_margin"
+  android:paddingTop="@dimen/activity_vertical_margin"
+  tools:context="com.fadaks.kingstouch.MainActivity">
+
+  <Button
+    android:text="RANKING"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/bt_start"
+    android:layout_alignLeft="@+id/bt_start"
+    android:layout_alignStart="@+id/bt_start"
+    android:id="@+id/bt_ranking" />
+
+  <Button
+    android:text="EXIT"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/bt_ranking"
+    android:layout_alignRight="@+id/bt_ranking"
+    android:layout_alignEnd="@+id/bt_ranking"
+    android:id="@+id/bt_EXIT" />
+
+  <Button
+    android:text="START"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:id="@+id/bt_start"
+    android:layout_below="@+id/imageView"
+    android:layout_centerHorizontal="true" />
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/logo"
+    android:layout_marginTop="66dp"
+    android:id="@+id/imageView"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+</RelativeLayout>

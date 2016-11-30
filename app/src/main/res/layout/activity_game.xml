@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#0099cc"
+  android:id="@+id/content_view"
+  tools:context="com.fadaks.kingstouch.GameActivity">
+
+  <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+  <TextView
+    android:id="@+id/fullscreen_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:keepScreenOn="true"
+    android:text="Touch This!!"
+    android:textColor="#33b5e5"
+    android:textSize="50sp"
+    android:textStyle="bold" />
+
+  <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <TextView
+      android:text="SCORE : 0"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/tv_score_text"
+      android:textColor="#5eff00"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      />
+
+    <TextView
+      android:text="TIME : 10.00"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:textColor="#5eff00"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      android:id="@+id/tv_time" />
+  </RelativeLayout>
+
+</FrameLayout>
